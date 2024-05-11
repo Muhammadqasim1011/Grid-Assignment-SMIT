@@ -1,0 +1,113 @@
+body {
+    background: #222;
+    color: white;
+    overflow: hidden;
+}
+.photo-animated-grid {
+    height: 86vh;
+
+    display: grid;
+    gap: 0.4rem;
+
+    grid-template-areas:
+        'a b c d'
+        'l m m e'
+        'k m m f'
+        'j i h g';
+
+    --stagger-delay: 200ms;
+}
+
+
+.card {
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 300ms;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+        filter: hue-rotate(180deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: 1;
+        filter: hue-rotate(0deg);
+    }
+}
+
+.card-1 {
+    grid-area: a;
+    animation-delay: calc(1 * var(--stagger-delay));
+}
+
+.card-2 {
+    grid-area: b;
+    animation-delay: calc(2 * var(--stagger-delay));
+}
+
+.card-3 {
+    grid-area: c;
+    animation-delay: calc(3 * var(--stagger-delay));
+}
+
+.card-4 {
+    grid-area: d;
+    animation-delay: calc(4 * var(--stagger-delay));
+}
+
+.card-5 {
+    grid-area: e;
+    animation-delay: calc(5 * var(--stagger-delay));
+}
+
+.card-6 {
+    grid-area: f;
+    animation-delay: calc(6 * var(--stagger-delay));
+}
+
+.card-7 {
+    grid-area: g;
+    animation-delay: calc(7 * var(--stagger-delay));
+}
+
+.card-8 {
+    grid-area: h;
+    animation-delay: calc(8 * var(--stagger-delay));
+}
+
+.card-9 {
+    grid-area: i;
+    animation-delay: calc(9 * var(--stagger-delay));
+}
+
+.card-10 {
+    grid-area: j;
+    animation-delay: calc(10 * var(--stagger-delay));
+}
+
+.card-11 {
+    grid-area: k;
+    animation-delay: calc(11 * var(--stagger-delay));
+}
+
+.card-12 {
+    grid-area: l;
+    animation-delay: calc(12 * var(--stagger-delay));
+}
+
+.main {
+    grid-area: m;
+    animation-delay: calc(13 * var(--stagger-delay));
+}
