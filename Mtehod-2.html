@@ -29,12 +29,7 @@
             display: grid;
             gap: 0.4rem;
             grid-template-columns: repeat(6, 1fr);
-            grid-template-areas: 
-            "H H H H H H"
-            "A1 A2 M1 M1 M1 S1"
-            "S2 A3 M1 M1 M1 S1"
-            "S2 A4 A5 A6 F1 F1"
-            ;
+            
 
         }
 
@@ -49,48 +44,37 @@
         }
 
         .grid-item-1 {
-            grid-area: H;
+            grid-column: span 6;
         }
 
-        .grid-item-2 {
-            grid-area: A1;
+        .grid-item-2,
+        .grid-item-3,
+        .grid-item-7,
+        .grid-item-8,
+        .grid-item-9,
+        .grid-item-10
+        {
+            grid-column: span 1;
         }
-
-        .grid-item-3 {
-            grid-area: A2;
-        }
-
-        .grid-item-4 {
-            grid-area: M1;
+        .grid-item-4{
+            grid-column: span 3;
+            grid-row: span 2;
         }
 
         .grid-item-5 {
-            grid-area: S1;
+            grid-row: span 2;
         }
 
         .grid-item-6 {
-            grid-area: S2;
+            grid-row: span 2;
         }
-
-        .grid-item-7 {
-            grid-area: A3;
-        }
-
-        .grid-item-8 {
-            grid-area: A4;
-        }
-
-        .grid-item-9 {
-            grid-area: A5;
-        }
-
-        .grid-item-10 {
-            grid-area: A6;
-        }
-
+        
         .grid-item-11 {
-            grid-area: F1;
+            grid-column: span 2;
         }
+
+
+        
     </style>
 </head>
 
