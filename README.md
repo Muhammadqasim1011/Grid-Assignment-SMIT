@@ -1,4 +1,4 @@
-#### SMIT Assignment: Web Layouts with HTML & CSS
+## SMIT Assignment: Web Layouts with HTML & CSS
 
 Welcome to the SMIT assignment repository for web layouts using HTML and CSS. This repository contains several web layout examples, each showcasing different techniques and approaches to create visually appealing and responsive web designs.
 
