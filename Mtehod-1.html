@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template Method One Usibg Grid Area</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .red {
+            background: orangered;
+        }
+
+        .green {
+            background: greenyellow;
+        }
+
+        .blue {
+            background: lightsteelblue;
+        }
+
+        .grid {
+            background: black;
+            min-height: 100dvh;
+            display: grid;
+            gap: 0.4rem;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: 
+            "H H H H H H"
+            "A1 A2 M1 M1 M1 S1"
+            "S2 A3 M1 M1 M1 S1"
+            "S2 A4 A5 A6 F1 F1"
+            ;
+
+        }
+
+        .grid-item {
+            border: 1px solid black;
+            padding: 2rem;
+            min-width: 0px;
+            min-height: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid-item-1 {
+            grid-area: H;
+        }
+
+        .grid-item-2 {
+            grid-area: A1;
+        }
+
+        .grid-item-3 {
+            grid-area: A2;
+        }
+
+        .grid-item-4 {
+            grid-area: M1;
+        }
+
+        .grid-item-5 {
+            grid-area: S1;
+        }
+
+        .grid-item-6 {
+            grid-area: S2;
+        }
+
+        .grid-item-7 {
+            grid-area: A3;
+        }
+
+        .grid-item-8 {
+            grid-area: A4;
+        }
+
+        .grid-item-9 {
+            grid-area: A5;
+        }
+
+        .grid-item-10 {
+            grid-area: A6;
+        }
+
+        .grid-item-11 {
+            grid-area: F1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid">
+        <div class="grid-item grid-item-1 green">1</div>
+        <div class="grid-item grid-item-2 blue">2</div>
+        <div class="grid-item grid-item-3 green">3</div>
+        <div class="grid-item grid-item-4 red">4</div>
+        <div class="grid-item grid-item-5 blue">5</div>
+        <div class="grid-item grid-item-6 green">6</div>
+        <div class="grid-item grid-item-7 blue">7</div>
+        <div class="grid-item grid-item-8 red">8</div>
+        <div class="grid-item grid-item-9 red">9</div>
+        <div class="grid-item grid-item-10 red">10</div>
+        <div class="grid-item grid-item-11 green">11</div>
+    </div>
+
+</body>
+
+</html>
